@@ -1,3 +1,4 @@
+#!/bin/bash
 apt-get update && apt-get -y upgrade
 apt install apache2
 a2enmod rewrite env
