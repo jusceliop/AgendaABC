@@ -21,7 +21,11 @@ sudo apt-get update -y && sudo apt-get upgrade -y
 
 ## Instalando Apache
 echo -e "$Cyan \n Instalando Apache2 $Color_Off"
-sudo apt-get install apache2 apache2-doc apache2-mpm-prefork apache2-utils libexpat1 ssl-cert -y
+sudo apt-get install apache2 -y
+
+# Atualizando o Sistema
+echo -e "$Cyan \n Atualizando o Sistema.. $Color_Off"
+sudo apt-get update -y && sudo apt-get upgrade -y
 
 echo -e "$Cyan \n Instalando PHP e Dependências $Color_Off"
 apt install software-properties-common python-software-properties -y
