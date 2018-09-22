@@ -57,6 +57,10 @@ sudo chmod -R 777 /etc/php/
 echo -e "$Cyan \n Reiniciando Apache2 $Color_Off"
 sudo service apache2 restart
 
+## Instalando Curl
+echo -e "$Cyan \n Instalando Curls $Color_Off"
+sudo apt-get install curl -y
+
 #Instalando Composer
 echo -e "$Cyan \n Instalando Composer... $Color_Off"
 curl -fSL https://getcomposer.org/composer.phar -o composer.phar
